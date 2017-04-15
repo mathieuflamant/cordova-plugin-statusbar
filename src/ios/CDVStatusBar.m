@@ -469,11 +469,11 @@ static const void *kStatusBarStyle = &kStatusBarStyle;
         if (!self.statusBarOverlaysWebView) {
             if (_statusBarVisible) {
                 // CB-10158 If a full screen video is playing the status bar height will be 0, set it to 20 if _statusBarVisible
-                frame.origin.y = height > 0 ? height: 20;
+//                frame.origin.y = height > 0 ? height: 20;
             }
         } else {
             // Even if overlay is used, we want to handle in-call/recording/hotspot larger status bar
-            frame.origin.y = height >= 20 ? height - 20 : 0;
+//            frame.origin.y = height >= 20 ? height - 20 : 0;
         }
         frame.size.height -= frame.origin.y;
         self.webView.frame = frame;
